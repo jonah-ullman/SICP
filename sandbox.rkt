@@ -1,6 +1,5 @@
 #lang sicp
-
-(define something 42)
-something
-(define another (+ something 11))
-another
+(define (double n) (* 2 n))
+(double 2)
+(define (triple n) (* 3 n))
+(triple 3)
