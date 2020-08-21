@@ -1,0 +1,9 @@
+#lang sicp
+(define (bigsquares a b c)
+  ((define first (if (> a b) a b))
+   (define temp (if (= first a) b a))
+   (define second (if (> c temp) c temp))
+   (+ (* first first) (* second second))))
+
+(bigsquares 2 3 4)
+  
